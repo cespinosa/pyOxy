@@ -70,7 +70,8 @@ Calibrators:
   - --lineIDs LINEIDS Emission Line Name
   - --nMC NMC MC iterations
 ** Example
-./getOH.py /data/CALIFA_DATA/dataproducts/fe_files/flux_elines.NGC5947.cube.fits.gz /home/espinosa/tmp/testOH --indexLines 45 28 27 26 47 0 46 49 50 --lineIDs Ha Hb OIII4959 OIII5007 NII6548 OII3727 NII6583 SII6717 SII6731 --indexeLines 249 232 231 230 251 204 250 253 254
+./getOH.py /path/to/fe_file /path/to/output --indexLines 45 28 27 26 47 0 46 49 50 --lineIDs Ha Hb OIII4959 OIII5007 NII6548 OII3727 NII6583 SII6717 SII6731 --indexeLines 249 232 231 230 251 204 250 253 254
+
 
 * Hardcode
 We set as NaN 7<OH and OH>9.5
