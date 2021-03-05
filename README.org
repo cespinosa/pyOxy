@@ -62,6 +62,11 @@ Calibrators:
 | OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
 | OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                  |
 
+* Requeriments:
+** Ho Calibrator:
+  OxygenMLP [[https://github.com/hoiting/OxygenMLP][Github]]
+  scikit-learn v0.21.3
+
 * How to use:
   - inPath                Input file path
   - outPath               Output Path
