@@ -49,18 +49,18 @@ Calibrators:
 | OH_Pil10_ONS     | 1.333*NII6583/Hb, R3, R2, P, S2    | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
 | OH_Pil10_ON      | 1.333*NII6583/Hb, R3, R2, S2       | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
 | OH_Pil11_NS      | 1.333*NII6583/Hb, R3, S2           | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Mattsson, 2011]] |
-| OH_Cur20_RS32    | (SII6717+SII6731)/Ha + OIII5007/Hb | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_R3      | OIII5007/Hb                        | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3O2    | OIII5007/OII3727                   | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_S2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_N2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_R23     | R23                                | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3S2    | OIII5007/((SII6717+SII6731)/Ha)    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_RS32    | (SII6717+SII6731)/Ha + OIII5007/Hb | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_R3      | OIII5007/Hb                        | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_O3O2    | OIII5007/OII3727                   | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_S2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_N2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_R23     | R23                                | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
+| OH_Cur20_O3S2    | OIII5007/((SII6717+SII6731)/Ha)    | [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..944C][Curti et al, 2020]]         |
 | OH_KK04          | O23, R23, 1.333*NII6583/OII3727    | [[https://ui.adsabs.harvard.edu/abs/2004ApJ...617..240K][Kobulnicky & Kewley, 2004]] |
-| OH_Pil16_R       | R3, R2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
-| OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
-| OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                  |
+| OH_Pil16_R       | R3, R2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3678P][Pilyugin & Grebel, 2016]]   |
+| OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3678P][Pilyugin & Grebel, 2016]]   |
+| OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2019]]                  |
 
 * Requeriments:
 ** Ho Calibrator:
