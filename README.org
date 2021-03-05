@@ -65,6 +65,7 @@ Calibrators:
 * Requeriments:
 ** Ho Calibrator:
   OxygenMLP [[https://github.com/hoiting/OxygenMLP][Github]]
+  
   scikit-learn v0.21.3
 
 * How to use:
