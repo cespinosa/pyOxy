@@ -1,0 +1,76 @@
+# -*- mode: org -*-
+#+TITLE:        pyOxy
+#+AUTHOR:       Carlos Espinosa-Ponce
+#+EMAIL:        cespinosa@astro.unam.mx
+#+DESCRIPTION:  Readme for pyOxy repository
+#+LANGUAGE:     en
+#+STARTUP:      overview
+#+DATE:         2021-02-05
+
+* Description
+pyOxy is a script to calculate the oxygen abundance with strong-lines calibrators.
+
+Emission lines:
+| LinesID  |
+|----------|
+| Ha       |
+| Hb       |
+| OIII4959 |
+| OIII5007 |
+| NII6548  |
+| OII3727  |
+| NII6583  |
+| SII6717  |
+| SII6731  |
+
+Indices used:
+
+| Index | Desciption                 |
+|-------+----------------------------|
+| R2    | OII3727/Hb                 |
+| R3    | (OIII4959+OIII5007)/Hb     |
+| R23   | R2+R3                      |
+| O3N2  | (OIII5007/Hb)*(Ha/NII6583) |
+| P     | R3/(R2+R3)                 |
+| S2    | (SII6717+SII6731)/Hb       |
+| N2    | (NII6548+NII6583)/Hb        |
+
+Calibrators:
+
+| Calibrator Label | Emission lines/Indices             | Reference                 |
+|------------------+------------------------------------+---------------------------|
+| OH_Mar13_N2      | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]        |
+| OH_Mar13_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]        |
+| OH_T04           | NII6548/Ha, R23                    | [[https://ui.adsabs.harvard.edu/abs/2004ApJ...613..898T][Tremonti et al, 2004]]      |
+| OH_Pet04_N2_lin  | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
+| OH_Pet04_N2_poly | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
+| OH_Pet04_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
+| OH_Kew02_N2O2    | NII6583/OII3727                    | [[https://ui.adsabs.harvard.edu/abs/2002ApJS..142...35K][Kewley & Dopita, 2002]]     |
+| OH_Pil10_ONS     | 1.333*NII6583/Hb, R3, R2, P, S2    | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
+| OH_Pil10_ON      | 1.333*NII6583/Hb, R3, R2, S2       | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
+| OH_Pil11_NS      | 1.333*NII6583/Hb, R3, S2           | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Mattsson, 2011]] |
+| OH_Cur20_RS32    | (SII6717+SII6731)/Ha + OIII5007/Hb | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_R3      | OIII5007/Hb                        | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_O3O2    | OIII5007/OII3727                   | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_S2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_N2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_R23     | R23                                | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_Cur20_O3S2    | OIII5007/((SII6717+SII6731)/Ha)    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
+| OH_KK04          | O23, R23, 1.333*NII6583/OII3727    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Kobulnicky & Kewley, 2004]] |
+| OH_Pil16_R       | R3, R2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
+| OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
+| OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                  |
+
+* How to use:
+  - inPath                Input file path
+  - outPath               Output Path
+  - --indexLines INDEXLINES Emission Line Indices in file
+  - --indexeLines INDEXELINES Emission Line Error Indices in file
+  - --lineIDs LINEIDS Emission Line Name
+  - --nMC NMC MC iterations
+** Example
+./getOH.py /data/CALIFA_DATA/dataproducts/fe_files/flux_elines.NGC5947.cube.fits.gz /home/espinosa/tmp/testOH --indexLines 45 28 27 26 47 0 46 49 50 --lineIDs Ha Hb OIII4959 OIII5007 NII6548 OII3727 NII6583 SII6717 SII6731 --indexeLines 249 232 231 230 251 204 250 253 254
+
+* Hardcode
+We set as NaN 7<OH and OH>9.5
