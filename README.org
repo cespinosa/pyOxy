@@ -22,6 +22,12 @@ Emission lines:
 | NII6583  |
 | SII6717  |
 | SII6731  |
+| SIII6312 |
+
+Extra Labels:
+| Labels ID |
+|-----------|
+| EWHa      |
 
 Indices used:
 
@@ -37,36 +43,41 @@ Indices used:
 
 Calibrators:
 
-| Calibrator Label | Emission lines/Indices             | Reference                 |
-|------------------+------------------------------------+---------------------------|
-| OH_Mar13_N2      | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]        |
-| OH_Mar13_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]        |
-| OH_T04           | NII6548/Ha, R23                    | [[https://ui.adsabs.harvard.edu/abs/2004ApJ...613..898T][Tremonti et al, 2004]]      |
-| OH_Pet04_N2_lin  | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
-| OH_Pet04_N2_poly | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
-| OH_Pet04_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]     |
-| OH_Kew02_N2O2    | NII6583/OII3727                    | [[https://ui.adsabs.harvard.edu/abs/2002ApJS..142...35K][Kewley & Dopita, 2002]]     |
-| OH_Pil10_ONS     | 1.333*NII6583/Hb, R3, R2, P, S2    | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
-| OH_Pil10_ON      | 1.333*NII6583/Hb, R3, R2, S2       | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]      |
-| OH_Pil11_NS      | 1.333*NII6583/Hb, R3, S2           | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Mattsson, 2011]] |
-| OH_Cur20_RS32    | (SII6717+SII6731)/Ha + OIII5007/Hb | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_R3      | OIII5007/Hb                        | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3O2    | OIII5007/OII3727                   | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_S2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_N2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_R23     | R23                                | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_Cur20_O3S2    | OIII5007/((SII6717+SII6731)/Ha)    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]         |
-| OH_KK04          | O23, R23, 1.333*NII6583/OII3727    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Kobulnicky & Kewley, 2004]] |
-| OH_Pil16_R       | R3, R2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
-| OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]   |
-| OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                  |
+| Calibrator Label | Emission lines/Indices             | Reference                  |
+|------------------+------------------------------------+----------------------------|
+| OH_Mar13_N2      | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]         |
+| OH_Mar13_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2013A%26A...559A.114M][Marino et al, 2013]]         |
+| OH_T04           | NII6548/Ha, R23                    | [[https://ui.adsabs.harvard.edu/abs/2004ApJ...613..898T][Tremonti et al, 2004]]       |
+| OH_Pet04_N2_lin  | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]      |
+| OH_Pet04_N2_poly | NII6548/Ha                         | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]      |
+| OH_Pet04_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2004MNRAS.348L..59P][Pettini & Pagel, 2004]]      |
+| OH_Kew02_N2O2    | NII6583/OII3727                    | [[https://ui.adsabs.harvard.edu/abs/2002ApJS..142...35K][Kewley & Dopita, 2002]]      |
+| OH_Pil10_ONS     | 1.333*NII6583/Hb, R3, R2, P, S2    | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]       |
+| OH_Pil10_ON      | 1.333*NII6583/Hb, R3, R2, S2       | [[https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P][Pilyugin et al, 2010]]       |
+| OH_Pil11_NS      | 1.333*NII6583/Hb, R3, S2           | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Mattsson, 2011]]  |
+| OH_Cur20_RS32    | (SII6717+SII6731)/Ha + OIII5007/Hb | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_R3      | OIII5007/Hb                        | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_O3O2    | OIII5007/OII3727                   | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_S2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_N2      | (SII6717+SII6731)/Ha               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_R23     | R23                                | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_O3N2    | O3N2                               | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_Cur20_O3S2    | OIII5007/((SII6717+SII6731)/Ha)    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Curti et al, 2020]]          |
+| OH_KK04          | O23, R23, 1.333*NII6583/OII3727    | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Kobulnicky & Kewley, 2004]]  |
+| OH_Pil16_R       | R3, R2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]    |
+| OH_Pil16_S       | R3, S2, N2                         | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]    |
+| OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                   |
+| NH_Pil16_R       | R2, R3, 1.333*NII6583/Hb           | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]    |
+| NO_Pil16_R       | NH_Pil16_R - OH_Pil16_R            | -------------------------  |
+| NO_Pil16_Ho_R    | NH_Pil16_R - OH_Ho                 | -------------------------  |
+| NO_Pil16_N2_R2   | R2, 1.333*NII6583/Hb,              | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.1145P][Pilyugin & Grebel, 2016]]    |
+| Ne_Oster_S       | SII6717, SII6731                   | [[https://ui.adsabs.harvard.edu/abs/2006agna.book.....O][Osterbrock & Ferland, 2006]] |
 
 * Requeriments:
 ** Ho Calibrator:
-  OxygenMLP [[https://github.com/hoiting/OxygenMLP][Github]]
-  
-  scikit-learn v0.21.3
+Install the Ho calibrator OxygenMLP from [[https://github.com/hoiting/OxygenMLP][Github]]
+
+In order to use OxygenMLP, the scikit-learn v0.21.3 must be used
 
 * How to use:
 ** Standalone script
@@ -77,17 +88,27 @@ getOH.py arguments:
   - --indexeLines INDEXELINES Emission Line Error Indices in file
   - --lineIDs LINEIDS Emission Line Name
   - --nMC NMC MC iterations
+  - --EWHaCut EWHACUT     EWHa cut value for mask if the EWHa index is given
+  - --SFHCube SFHCUBE     Path of SFHCube for stellar populations filter
+  - --AgeCut AGECUT       Age cut value for stellar populations mask if the SFHCube is given
+  - --fyCut FYCUT         fy cut value for stellar population mask if the SFHCube index is given
+  - --MaskMaps MASKMAPS   flag to save the mask maps used, 1-True, 0-False
 *** Example
-./getOH.py /path/to/fe_file /path/to/output --indexLines 45 28 27 26 47 0 46 49 50 --lineIDs Ha Hb OIII4959 OIII5007 NII6548 OII3727 NII6583 SII6717 SII6731 --indexeLines 249 232 231 230 251 204 250 253 254
+./getOH.py /data/CALIFA_DATA/dataproducts/fe_files/flux_elines.NGC5947.cube.fits.gz /home/espinosa/tmp/testOH --indexLines 45 28 27 26 47 0 46 49 50 42 198 --lineIDs Ha Hb OIII4959 OIII5007 NII6548 OII3727 NII6583 SII6717 SII6731 SIII6312 EWHa --indexeLines 249 232 231 230 251 204 250 253 246 254 --SFHCube /data/CALIFA_DATA/dataproducts/sfh_files/NGC5947.SFH.cube.fits.gz --MaskMaps 1
 ** Run on a Python's interpreter
 Do =from getOH import main=. The arguments of main function are:
 - InputPath        Input file path
 - OutputPath       Output file path, e. g. /data/Oxygen.NGC5947
 - indices          Indices of emission lines in fe cube
-- eindices         Indicies of errors associates to emission lines in fe cube
+- eindices         Indices of errors associates to emission lines in fe cube
 - lineIDs          Labels of emission lines, see table above
 - nMC              number of MC iterations
+- EWHaCut EWHACUT     EWHa cut value for mask if the EWHa index is given
+- FHCube SFHCUBE     Path of SFHCube for stellar populations filter
+- AgeCut AGECUT       Age cut value for stellar populations mask if the SFHCube is given
+- fyCut FYCUT         fy cut value for stellar population mask if the SFHCube index is given
+- MaskMaps MASKMAPS   flag to save the mask maps used, 1-True, 0-False
 
 
 * Hardcode
-We set a mask: NaN 7 < OH and OH > 9.5 on line 132
+We set a mask: NaN 7 < OH and OH > 9.5 on line 132 (deprecated)
