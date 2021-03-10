@@ -8,7 +8,9 @@
 #+DATE:         2021-02-05
 
 * Description
-pyOxy is a script to calculate the oxygen abundance with strong-lines calibrators.
+pyOxy is a script to calculate the oxygen abundance and others physical properties with strong-lines calibrators. The result is save on a FITS file where each slice is a different property. 
+
+Also, if EWHa is given and/or SFH cube, the resulting maps are only for star  forming  spaxels.
 
 Emission lines:
 | LinesID  |
