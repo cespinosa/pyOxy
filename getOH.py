@@ -91,13 +91,11 @@ def getAllOH(dicIn):
     dicOut['NO_Pil16_N2_R2'] = NO_Pil16_cal(dicIn['N2_Hb'], dicIn['R2'])
     dicOut['Ne_Oster_S'] = Ne_Oster_S_cal(dicIn['SII6717_cor'],
                                            dicIn['SII6731_cor'])
-
-
     return dicOut
 
 def main(InputPath, OutputPath, indices, eindices, lineIDs, nMC=1,
          EWHaCut=6, SFHCube=None, AgeCut=0.3548, fyCut=0.04,
-         MaskMaps):
+         MaskMaps=0):
     CreateDic  = True
     data = fits.getdata(InputPath)
     if 'EWHa' in lineIDs:
@@ -264,4 +262,4 @@ if __name__ == "__main__":
         sys.exit()
     main(InputPath=inPath, OutputPath=outPath, indices=indices, lineIDs=lineIDs,
          eindices=eindices, nMC=nMC, EWHaCut=EWHaCut, SFHCube=SFHCube,
-         AgeCut=AgeCut, fyCut=fyCut, MaskMaps)
+         AgeCut=AgeCut, fyCut=fyCut, MaskMaps=MaskMaps)
