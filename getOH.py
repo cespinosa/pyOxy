@@ -10,13 +10,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from astropy.io import fits
 from extinction import Av_calculation, make_correction
-from calibrators.OHCalN2Marino    import OH_M13_N2_cal
-from calibrators.OHCalO3N2Marino  import OH_M13_O3N2_cal
+from calibrators.OHCalN2Marino import OH_M13_N2_cal
+from calibrators.OHCalO3N2Marino import OH_M13_O3N2_cal
 from calibrators.OHCalR23Tremonti import OH_T04_cal
-from calibrators.OHCalN2Pettini   import OH_Pet04_N2_lin_cal
-from calibrators.OHCalN2bPettini  import OH_Pet04_N2_poly_cal
+from calibrators.OHCalN2Pettini import OH_Pet04_N2_lin_cal
+from calibrators.OHCalN2bPettini import OH_Pet04_N2_poly_cal
 from calibrators.OHCalO3N2Pettini import OH_Pet04_O3N2_cal
-from calibrators.OHCalN2O2Kewley  import OH_Kew02_N2O2_cal
+from calibrators.OHCalN2O2Kewley import OH_Kew02_N2O2_cal
 from calibrators.OHCalONSPilyugin import OH_Pil10_ONS_cal
 from calibrators.OHCalONPilyugin  import OH_Pil10_ON_cal
 from calibrators.OHCalNSPilyugin  import OH_Pil11_NS_cal
@@ -62,13 +62,14 @@ def getAllOH(dicIn):
                                               dicIn['R2'], dicIn['S2'])
     dicOut['OH_Pil11_NS']  = OH_Pil11_NS_cal(dicIn['R3'], dicIn['N2_Hb'],
                                               dicIn['S2'])
-    dicOut['OH_Cur20_RS32'] = OH_C20_RS32_cal(dicIn['RS32'])
-    dicOut['OH_Cur20_R3'] = OH_C20_R3_cal(dicIn['O3Hb'])
+    dicOut['OH_Cur20_RS32'] = OH_C20_RS32_cal(dicIn['RS32'],
+                                              dicIn['N2O2Kew'])
+    dicOut['OH_Cur20_R3'] = OH_C20_R3_cal(dicIn['O3Hb'], dicIn['N2O2Kew'])
     dicOut['OH_Cur20_O3O2'] = OH_C20_O3O2_cal(dicIn['O3O2'])
-    dicOut['OH_Cur20_S2'] = OH_C20_S2_cal(dicIn['S2Ha'])
-    dicOut['OH_Cur20_R2'] = OH_C20_R2_cal(dicIn['R2'])
+    dicOut['OH_Cur20_S2'] = OH_C20_S2_cal(dicIn['S2Ha'], dicIn['N2O2Kew'])
+    dicOut['OH_Cur20_R2'] = OH_C20_R2_cal(dicIn['R2'], dicIn['N2O2Kew'])
     dicOut['OH_Cur20_N2'] = OH_C20_N2_cal(dicIn['N2Ha'])
-    dicOut['OH_Cur20_R23'] = OH_C20_R23_cal(dicIn['R23'])
+    dicOut['OH_Cur20_R23'] = OH_C20_R23_cal(dicIn['R23'], dicIn['N2O2Kew'])
     dicOut['OH_Cur20_O3N2'] = OH_C20_O3N2_cal(dicIn['O3N2'])
     dicOut['OH_Cur20_O3S2'] = OH_C20_O3S2_cal(dicIn['O3S2'])
     dicOut['OH_KK04'] = OH_KK04_cal(dicIn['N2O2'], dicIn['R23'],
