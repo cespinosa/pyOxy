@@ -69,6 +69,10 @@ Calibrators:
 | OH_Pil16_R       | R3, R2, N2                         |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3678P][Pilyugin & Grebel, 2016]]    |
 | OH_Pil16_S       | R3, S2, N2                         |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3678P][Pilyugin & Grebel, 2016]]    |
 | OH_Ho            | R2, S2, OIII5007/Hb, NII6583/Hb    |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                   |
+| U_Dors_O32       | O2, O3                             |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2011MNRAS.415.3616D][Dors, 2011]]                 |
+| U_Dors_S         | S2                                 |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3569H][Ho, 2020]]                   |
+| U_Mor16_O23_fs   | O2, O3      |Theoretical| [[https://ui.adsabs.harvard.edu/abs/2016A%26A...594A..37M][Morisset, 2016]]           |
+| U_Mor16_O23_ts   | O2, O3     |Theoretical| [[https://ui.adsabs.harvard.edu/abs/2016A%26A...594A..37M][Morisset, 2016]]           |
 | NH_Pil16_R       | R2, R3, 1.333*NII6583/Hb           |Empirical  | [[https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3678P][Pilyugin & Grebel, 2016]]    |
 | NO_Pil16_R       | NH_Pil16_R - OH_Pil16_R            |Empirical  | -------------------------  |
 | NO_Pil16_Ho_R    | NH_Pil16_R - OH_Ho                 |Empirical  | -------------------------  |
